@@ -1,4 +1,4 @@
-FROM abhishekacharya/myrepo:ub
+FROM abhishekacharya/myrepo:ubuntu_ssh
 
 RUN apk update
 RUN apk add maven
