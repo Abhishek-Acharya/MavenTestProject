@@ -6,6 +6,6 @@ RUN apt-get update
 COPY pom.xml /usr/local/Calculator/pom.xml
 COPY src /usr/local/Calculator/src
 WORKDIR /usr/local/Calculator
-RUN ["java","-cp","target/Calculator-1.0-SNAPSHOT.jar","com.calculator.Calculator.app"]
+RUN ["java","-cp","target/Calculator-1.0-SNAPSHOT.jar","calculator.Calculator.app"]
 EXPOSE 22
 CMD ["/usr/sbin/sshd","-D"]
