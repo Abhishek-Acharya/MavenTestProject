@@ -1,8 +1,8 @@
-FROM abhishekacharya/myrepo:ubuntu_ssh
+FROM abhishekacharya/myubuntu
 
 RUN apt-get update
-RUN apt-get install openjdk-8-jre-headless
-RUN apt-get install maven
+#RUN apt-get install openjdk-8-jre-headless
+#RUN apt-get install maven
 COPY pom.xml /usr/local/Calculator/pom.xml
 COPY src /usr/local/Calculator/src
 WORKDIR /usr/local/Calculator
