@@ -1,7 +1,7 @@
 FROM abhishekacharya/myrepo:ubuntu_ssh
 
 RUN apt-get update
-RUN apt-get install openjdk-8-jdk
+RUN apt-get install openjdk-8-jre
 RUN apt-get install maven
 COPY pom.xml /usr/local/Calculator/pom.xml
 COPY src /usr/local/Calculator/src
