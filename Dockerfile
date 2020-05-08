@@ -13,6 +13,4 @@ COPY pom.xml /usr/local/Calculator/pom.xml
 COPY src /usr/local/Calculator/src
 WORKDIR /usr/local/Calculator
 RUN mvn package
-RUN ["java","-cp","target/Calculator-1.0-SNAPSHOT.jar","com/calculator/Calculator"]
-EXPOSE 22
-CMD ["/usr/sbin/sshd","-D"]
+CMD ["java","-cp","target/Calculator-1.0-SNAPSHOT.jar","com/calculator/Calculator"]
